@@ -160,7 +160,7 @@
 
             async function updateQuote() {
                 try {
-                    const response = await fetch("https://gist.githubusercontent.com/stealerofbones/4616acb19ed0e55b4901ac53a94d5bb8/raw/eab5b60aeb05d1bc748ce9c3d2bd0566c1c6c4f4/turn-me-into-a-boy-quotes.json");
+                    const response = await fetch("quotes.json");
                     const data = await response.json();
 
                     if (response.ok) {
